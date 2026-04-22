@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Preview Card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Figtree', Arial, sans-serif;
+      background-color: #f4d04e;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #111111;
+      border-radius: 20px;
+      padding: 24px;
+      max-width: 384px;
+      box-shadow: 8px 8px 0 #111111;
+    }
+
+    .card__image {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 24px;
+    }
+
+    .card__tag {
+      display: inline-block;
+      background-color: #f4d04e;
+      color: #111111;
+      font-weight: 800;
+      font-size: 14px;
+      padding: 4px 12px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+
+    .card__date {
+      font-size: 14px;
+      color: #111111;
+      margin-bottom: 12px;
+    }
+
+    .card__title {
+      font-size: 24px;
+      font-weight: 800;
+      color: #111111;
+      margin-bottom: 12px;
+      cursor: pointer;
+    }
+
+    .card__title:hover {
+      color: #f4d04e;
+    }
+
+    .card__description {
+      font-size: 16px;
+      color: #6b6b6b;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+
+    .card__author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .card__avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
+
+    .card__name {
+      font-size: 14px;
+      font-weight: 800;
+      color: #111111;
+    }
+  </style>
+</head>
+<body>
+
+  <article class="card">
+    <img src="assets/images/Blog Image.png" alt="Ілюстрація статті" class="card__image">
+
+    <span class="card__tag">HTML &amp; CSS</span>
+    <p class="card__date">Публікація 1 Вересня 2025</p>
+
+    <h2 class="card__title">Практична №3</h2>
+
+    <p class="card__description">
+      Мета практичної роботи полягає в тому, щоб налаштувати середовище розробки VS Code, а також реалізувати картку блогу для вдосконалення фундаментальних навичок з HTML та CSS.
+    </p>
+
+    <div class="card__author">
+      <img src="assets/images/avatar-femail.png" alt="Аватар" class="card__avatar">
+      <p class="card__name">Кара Ангеліна</p>
+    </div>
+  </article>
+
+</body>
+</html>
